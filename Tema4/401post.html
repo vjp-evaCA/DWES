@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 401</title>
+</head>
+
+<body>
+    <h1>Formulario para enviar datos</h1>
+
+    <form action='401server.php' method='get'>
+        <fieldset>
+            <legend>Datos</legend>
+            <div>
+                <label for='heroe'>Héroe:</label><br />
+                <input type='text' name='heroe' id='heroe' maxlength="50" /><br />
+            </div>
+            <div>
+                <label for='villano'>Villano:</label><br />
+                <input type='text' name='villano' id='villano' maxlength="50" /><br />
+            </div>
+            <div>
+                <input type='submit' name='enviar' value='Enviar' />
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
