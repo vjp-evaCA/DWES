@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 402</title>
+</head>
+
+<body>
+    <h1>Formulario para enviar datos</h1>
+
+    <form action='402formulario.php' method='post'>
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            
+            <div>
+                <label for='nombreCompleto'>Nombre completo (Nombre y apellidos):</label><br />
+                <input type='text' name='nombreCompleto' id='nombreCompleto' maxlength="100" /><br />
+            </div>
+            <br>
+            
+            <div>
+                <label for='email'>Email:</label><br />
+                <input type='text' name='email' id='email' maxlength="100" /><br />
+            </div>
+            <br>
+            
+            <div>
+                <label for='url'>URL página personal:</label><br />
+                <input type='url' name='url' id='url' maxlength="1000" /><br />
+            </div>
+            <br>
+            
+            <div>
+                <label>Sexo:</label><br />
+                <input type='radio' name='sexo' id='hombre' value='Hombre' />
+                <label for='hombre'>Hombre</label><br />
+                
+                <input type='radio' name='sexo' id='mujer' value='Mujer' />
+                <label for='mujer'>Mujer</label><br />
+                
+                <input type='radio' name='sexo' id='otro' value='Otro' />
+                <label for='otro'>Otro</label><br />
+                
+                <input type='radio' name='sexo' id='prefieroNoDecirlo' value='Prefiero no decirlo' />
+                <label for='prefieroNoDecirlo'>Prefiero no decirlo</label><br />
+            </div>
+            <br>
+            
+            <div>
+                <label for='nConvivientes'>Número de convivientes en el domicilio:</label><br />
+                <input type='number' name='nConvivientes' id='nConvivientes' min="0" max="20" value="0" /><br />
+            </div>
+            <br>
+            
+            <div>
+                <label>Aficiones (checkboxes):</label><br />
+                <input type='checkbox' name='aficiones[]' id='lectura' value='Lectura' />
+                <label for='lectura'>Leer</label><br />
+                
+                <input type='checkbox' name='aficiones[]' id='deporte' value='Deporte' />
+                <label for='deporte'>Hacer deporte</label><br />
+                
+                <input type='checkbox' name='aficiones[]' id='musica' value='Música' />
+                <label for='musica'>Escuchar música</label><br />
+                
+                <input type='checkbox' name='aficiones[]' id='viajar' value='Viajar' />
+                <label for='viajar'>Viajar</label><br />
+            </div>
+            <br>
+            
+            <div>
+                <label for='menuFav'>Menú favorito (lista selección múltiple):</label><br />
+                <select name='menuFav[]' id='menuFav' multiple size="3">
+                    <option value='Pizza'>Pizza</option>
+                    <option value='Pasta'>Pasta</option>
+                    <option value='Hamburguesa'>Hamburguesa</option>
+                    <option value='Sushi'>Sushi</option>
+                </select><br/>
+                <small>Mantén presionada la tecla Ctrl para seleccionar múltiples opciones</small>
+            </div>
+            <br>
+            
+            <div>
+                <input type='submit' name='enviar' value='Enviar' />
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
