@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 405</title>
+
+</head>
+
+<body>
+    <h1>Subida de imágenes</h1>
+    <form action="405subidaImagen.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="anchura">Anchura:</label>
+            <input type="number" id="anchura" name="anchura" required>
+        </div>
+        <div>
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura" name="altura" required>
+        </div>
+        <div>
+            <label for="imagen">Selecciona imagen: </label>
+            <input type="file" name="archivoEnviado" accept="image/*" required><br>
+        </div>
+        <div>
+            <input type="submit" name="btnSubir" value="Subir">
+        </div>
+    </form>
+</body>
+
+</html>
