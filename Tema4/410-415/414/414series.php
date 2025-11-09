@@ -1,5 +1,5 @@
 <?php
-// 412peliculas.php - Vista del listado de películas
+// 414series.php - Vista del listado de series
 session_start();
 
 // Verificar que el usuario está logueado
@@ -8,8 +8,8 @@ if (!isset($_SESSION['usuario'])) {
     exit;
 }
 
-// Obtener películas desde la sesión
-$peliculas = $_SESSION['peliculas'];
+// Obtener series desde la sesión
+$series = $_SESSION['series'];
 ?>
 
 <!DOCTYPE html>
@@ -17,10 +17,10 @@ $peliculas = $_SESSION['peliculas'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Películas</title>
+    <title>Listado de Series</title>
 </head>
 <body>
-    <h1>Listado de Películas</h1>
+    <h1>Listado de Series</h1>
     
     <nav>
         <a href="412peliculas.php">Ver Películas</a> | 
@@ -30,9 +30,9 @@ $peliculas = $_SESSION['peliculas'];
     
     <ul>
         <?php
-        // Recorrer y mostrar todas las películas del array
-        foreach ($peliculas as $pelicula) {
-            echo "<li>$pelicula</li>";
+        // Recorrer y mostrar todas las series del array
+        foreach ($series as $serie) {
+            echo "<li>$serie</li>";
         }
         ?>
     </ul>
