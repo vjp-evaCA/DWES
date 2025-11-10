@@ -23,10 +23,10 @@ $series = $_SESSION['series'];
     <h1>Listado de Series</h1>
     
     <nav>
-        <a href="412peliculas.php">Ver Películas</a> | 
-        <a href="414series.php">Ver Series</a> |
-        <a href="413logout.php">Cerrar Sesión</a>
-    </nav>
+    <a href="../412/412peliculas.php">Ver Películas</a> | 
+    <a href="414series.php">Ver Series</a> |
+    <a href="../413/413logout.php">Cerrar Sesión</a>
+</nav>
     
     <ul>
         <?php

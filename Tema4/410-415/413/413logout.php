@@ -3,6 +3,6 @@
 session_start();
 $_SESSION = array();
 session_destroy();
-header('Location: ../410/410index.php');
+header('Location: ../410/410login.php');
 exit;
 ?>
