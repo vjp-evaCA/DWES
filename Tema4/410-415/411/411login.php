@@ -1,31 +1,36 @@
 <?php
-// 411login.php - Controlador de login
+// Inicio de sesión
 session_start();
 
+// Cojo el usuario y la contraseña
 $usuario = $_POST['usuario'];
-$password = $_POST['password'];
+$contrasena = $_POST['contrasena'];
 
-if ($usuario == 'usuario' && $password == 'usuario') {
-    // Guardar usuario en sesión
+// Verifico si son correctas
+if (($usuario == 'usuario') && ($contrasena == 'usuario')) {
+
+    // Guardar usuario en la sesión
     $_SESSION['usuario'] = $usuario;
-    
-    // Almacenar arrays de películas y series en la sesión
+
+    // Array de películas
     $_SESSION['peliculas'] = [
-        'El Padrino',
-        'Pulp Fiction', 
-        'El Señor de los Anillos'
+        'Star Wars',
+        'Harry Potter',
+        'Marvel'
     ];
-    
+
+    // Array de series
     $_SESSION['series'] = [
-        'Breaking Bad',
-        'Juego de Tronos',
-        'Stranger Things'
+        'Las chicas Gilmore',
+        'La casa de papel',
+        'Anatomía de Grey'
     ];
-    
+
+    // Redirección a este archivo
     header('Location: ../412/412peliculas.php');
 } else {
-    // CORREGIDO: Redirigir al formulario de LOGIN, no al del alumno
+    
+    // Redirige al formulario de LOGIN
     header('Location: ../410/410login.php?error=1');
 }
 exit;
-?>
