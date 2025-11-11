@@ -1,0 +1,19 @@
+{
+    "name": "dwes/monologos",
+    "desciption": "Proyecto de ejemplo con Monolog",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Eva Cantero Abad",
+            "email": "ecanteroa02@informatica.iesvalledeljerteplasencia.es"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dwes\\Monologos\\": "src/"
+        }
+    }
+}
