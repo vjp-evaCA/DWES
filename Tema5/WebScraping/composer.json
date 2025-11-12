@@ -1,0 +1,17 @@
+{
+    "name": "ecanteroa02/web-scraping",
+    "autoload": {
+        "psr-4": {
+            "Ecanteroa02\\WebScraping\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eva Cantero Abad",
+            "email": "ecanteroa02@informatica.iesvalledeljerteplasencia.es"
+        }
+    ],
+    "require": {
+        "fabpot/goutte": "^4.0"
+    }
+}
