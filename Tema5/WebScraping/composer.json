@@ -13,5 +13,17 @@
     ],
     "require": {
         "fabpot/goutte": "^4.0"
+    },
+    "require-dev": {
+        "phpdocumentor/shim": "^3.8",
+        "phpunit/phpunit": "^9"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpdocumentor/shim": true
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors tests"
     }
 }
