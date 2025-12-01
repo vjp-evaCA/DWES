@@ -1,0 +1,15 @@
+{
+    "name": "ecanteroa02/tema7",
+    "autoload": {
+        "psr-4": {
+            "Ecanteroa02\\Tema7\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Eva Cantero Abad",
+            "email": "ecanteroa02@informatica.iesvalledeljerteplasencia.es"
+        }
+    ],
+    "require": {}
+}
