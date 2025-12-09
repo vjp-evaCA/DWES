@@ -4,6 +4,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Nota;
+use App\Models\Detalle;
+use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
@@ -40,5 +42,29 @@ class PagesController extends Controller
         $notas = Nota::all();
 
         return view('notas', compact('notas'));
+    }
+
+    public function detalle($id)
+    {
+        $detalle = Nota::findOrFail($id);
+
+        return view('detalle', compact('nota'));
+    }
+
+    public function formulario()
+    {
+        return view('formulario');
+    }
+
+    public function crear(Request $request)
+    {
+        $notaNueva = new Nota;
+
+        $notaNueva->nombre = $request->nombre;
+        $notaNueva->descripcion = $request->descripcion;
+
+        $notaNueva->save();
+
+        return back()->with('mensaje', 'Nota agregada exitósamente');
     }
 }

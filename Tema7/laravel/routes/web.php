@@ -9,3 +9,6 @@ Route::get('datos', [ PagesController::class, 'datos' ]);
 Route::get('cliente/{id?}', [ PagesController::class, 'cliente' ]) -> where('id', '[0-9]+');
 Route::get('nosotros/{nosotros?}', [ PagesController::class, 'nosotros']) -> name('nosotros');
 Route::get('notas', [ PagesController::class, 'notas' ]);
+
+Route::get('notas', [ PagesController::class, 'formulario' ]);
+Route::post('notas', [ PagesController::class, 'crear' ]) -> name('notas.crear');
